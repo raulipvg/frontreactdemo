@@ -35,7 +35,7 @@ export default function Formulario() {
 
     const formik = useFormik({
         initialValues: {
-            id:undefined,
+            id:0,
             nombre: '',
             apellido: '',
             rut: '',
@@ -248,7 +248,7 @@ export default function Formulario() {
     const hideDialog = () => {
         setSubmitted(false);
         setDataDialog(false);
-        if(index != -1){
+        if(index > 0){
             datas[index].Acciones!.loadingEdit = false;
             setDatas([...datas]); 
         }

@@ -25,7 +25,7 @@ export interface ClienteModel {
     totalRecords: number;
   }
 
-const url = 'https://localhost:7273';
+const url = 'http://localhost:5180';
 export const ClientService = {
     
     // Obtener todos los clientes
